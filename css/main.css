@@ -4,7 +4,8 @@
   --font-family: 'Atkinson Hyperlegible', sans-serif;
   --primary-color: hsl(231, 75%, 53%);
   --secondary-color: hsl(209, 100%, 55%);
-  --tertiary-color: hsl(230, 75%, 36%);
+  --primary-dark-color: hsl(230, 75%, 36%);
+  --tertiary-color: hsl(0, 0%, 97%);
   --dark-color: #000;
   --light-color: #fff;
 }
@@ -76,8 +77,6 @@ img {
 }
 
 .hero {
-  background-color: var(--primary-color);
-  color: var(--light-color);
   height: 85vh;
   padding: 40px;
 }
@@ -106,8 +105,9 @@ img {
   gap: 30px;
 }
 
-.about-content h2 {
-  font-size: 5rem;
+.about-content h2,
+.services h2 {
+  font-size: 4.5rem;
 }
 
 .about-text {
@@ -120,4 +120,32 @@ img {
   height: auto;
   aspect-ratio: 16 / 8;
   object-fit: cover;
+}
+
+/* Cards */
+
+.services .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.services .card {
+  padding: 30px;
+  margin: 15px;
+  border: 2px solid #eee;
+  text-align: center;
+}
+
+.services .card i {
+  margin-bottom: 20px;
+}
+
+.services .card h3 {
+  font-size: 1.7rem;
+}
+
+.services .card p {
+  margin-top: 15px;
+  line-height: 1.1;
 }

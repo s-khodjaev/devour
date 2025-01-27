@@ -1,9 +1,40 @@
-/* Buttons & Links */
+/* Links */
 
 .link {
   color: var(--secondary-color);
   font-size: 1.4rem;
   font-style: italic;
+}
+
+/* Backgrounds & Buttons */
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color);
+  color: var(--dark-color);
 }
 
 /* Padding */
@@ -22,6 +53,56 @@
 
 .p-4 {
   padding: 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+/* Margin */
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
 }
 
 /* Flex Columns */
