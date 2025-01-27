@@ -78,7 +78,7 @@ img {
 .hero {
   background-color: var(--primary-color);
   color: var(--light-color);
-  height: 100vh;
+  height: 85vh;
   padding: 40px;
 }
 
@@ -95,4 +95,29 @@ img {
   margin-bottom: 40px;
   max-width: 400px;
   font-size: 1.1rem;
+}
+
+/* About */
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-content h2 {
+  font-size: 5rem;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
 }
