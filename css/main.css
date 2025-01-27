@@ -1,0 +1,98 @@
+/* CSS Variables */
+
+:root {
+  --font-family: 'Atkinson Hyperlegible', sans-serif;
+  --primary-color: hsl(231, 75%, 53%);
+  --secondary-color: hsl(209, 100%, 55%);
+  --tertiary-color: hsl(230, 75%, 36%);
+  --dark-color: #000;
+  --light-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.7;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo img {
+  width: 200px;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+
+.navbar a.active {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.hero {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  height: 100vh;
+  padding: 40px;
+}
+
+.content {
+  padding: 40px 50px;
+}
+
+.content h1 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.content p {
+  margin-bottom: 40px;
+  max-width: 400px;
+  font-size: 1.1rem;
+}
