@@ -55,6 +55,11 @@
   color: var(--dark-color);
 }
 
+.bg-primary-dark {
+  background-color: var(--primary-dark-color);
+  color: var(--light-color);
+}
+
 /* Padding */
 
 .p-1 {

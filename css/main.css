@@ -21,6 +21,7 @@ body {
   background-color: var(--light-color);
   color: var(--dark-color);
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -54,7 +55,6 @@ img {
   width: 100%;
   height: 70px;
   padding: 0 30px;
-  margin-bottom: 20px;
 }
 
 .navbar ul {
@@ -78,10 +78,10 @@ img {
 
 .hero {
   height: 100vh;
-  padding: 40px;
 }
 
 .content {
+  margin: 30px 40px;
   padding: 40px 50px;
 }
 
@@ -191,4 +191,101 @@ img {
 
 .contact .btn i {
   margin-left: 5px;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container .social-media i {
+  padding: 0 5px;
+}
+
+/* Media Queries */
+
+/* 992px - Laptops */
+@media (max-width: 992px) {
+  .flex-columns .row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flex-columns img {
+    display: none;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .services .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 768px - Tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .content h1 {
+    margin-top: 20px;
+  }
+
+  .content p {
+    margin-bottom: 10px;
+  }
+
+  .about h2,
+  .services h2,
+  .contact h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .flex-items .row {
+    flex-direction: column;
+  }
+}
+
+/* 500px - Mobile */
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    font-size: 0.76rem;
+    padding: 10px;
+  }
+
+  .content p {
+    display: none;
+  }
+
+  .services .row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
