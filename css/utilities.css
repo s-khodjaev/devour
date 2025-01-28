@@ -130,3 +130,24 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Flex Items */
+
+.flex-items .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.flex-items .row > div {
+  flex: 1;
+  padding: 20px;
+}
+
+.flex-items img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
