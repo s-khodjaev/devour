@@ -6,7 +6,25 @@
   font-style: italic;
 }
 
+/* Container */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* Backgrounds & Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  font-size: 0.87rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
 .bg-primary,
 .btn-primary {

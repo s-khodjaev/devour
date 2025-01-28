@@ -106,7 +106,8 @@ img {
 }
 
 .about-content h2,
-.services h2 {
+.services h2,
+.contact h2 {
   font-size: 4.5rem;
 }
 
@@ -148,4 +149,46 @@ img {
 .services .card p {
   margin-top: 15px;
   line-height: 1.1;
+}
+
+/* Contact Form */
+
+.contact .form-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 100px;
+}
+
+.form-container .row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-container .form-control {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact .contact-details > div {
+  margin-bottom: 20px;
+}
+
+.contact .contact-details i {
+  margin-right: 10px;
+}
+
+.contact .btn i {
+  margin-left: 5px;
 }
